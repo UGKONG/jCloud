@@ -1,0 +1,20 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Dongle', sans-serif;
+  font-weight: 300;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+}
+
+html, body, #root, #root > main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
