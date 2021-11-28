@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.(js|jsx)$/, exclude: /node_modules/, use: ['babel-loader'] },
-      { test: /\.(png|jpg|jpeg|bmp|ico)$/, use: ['file-loader'] },
+      { test: /\.(png|jpg|jpeg|bmp|ico|svg)$/, use: [{loader: 'file-loader', options: {outputPath: 'img', name: '[name].[ext]'}}]},
       { test: /\.(c|sa|sc)ss$/, use: ['style-loader', 'css-loader'] },
       { test: /\.html$/, use: ['html-loader'] },
     ]

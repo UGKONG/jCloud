@@ -79,6 +79,18 @@ export const useRest = ( request ) => {
   }
 }
 
+export const useSQL = (url = '/', data) => {
+  fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(data)
+  })
+  // .then(res => res.json())
+  // .then(data => {
+  //   console.log(data);
+  // });
+
+}
+
 // FadeIn 함수 (element:String, duration:Number) : None
 export const useFadeIn = (element = null, duration = 500) => {
   if (!element) {
